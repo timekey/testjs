@@ -1,0 +1,42 @@
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "user 1",
+    "email": "user1@company.test"
+}
+
+### bad create user
+
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "without email"
+}
+
+
+###
+
+GET http://localhost:3000/user
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/user/6763d26274f9a1b262b255db
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:3000/user/6763cf9f74f9a1b262b255d5
+Content-Type: application/json
+
+{
+    "name": "user1",
+    "email": "email2@company.test"
+}
+
+###
+
+DELETE http://localhost:3000/user/6763f8bc531ee0c0c1ca1f62
+Content-Type: application/json

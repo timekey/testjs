@@ -1,0 +1,33 @@
+POST http://localhost:3000/company
+Content-Type: application/json
+
+{
+    "name": "CompanyName",
+    "address": "Number Street CIty Country",
+    "userId": "6763d26274f9a1b262b255db"
+}
+
+###
+
+GET http://localhost:3000/company
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/company/67633530be8655691159f5fa
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:3000/company/67633530be8655691159f5fa
+Content-Type: application/json
+
+{
+    "name": "CompanyName 2",
+    "address": "Number 2 Street CIty Country"
+}
+
+###
+
+DELETE http://localhost:3000/company/67633530be8655691159f5fa
+Content-Type: application/json
